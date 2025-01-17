@@ -23,7 +23,7 @@ else:
     print("Incorrect!")
 
 answer = input("After training, how many months will the placement last? ")
-if answer.lower() == "random access memory":
+if answer == "15":
     print('Correct!')
     score += 1
 else:
