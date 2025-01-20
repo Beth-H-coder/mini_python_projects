@@ -8,3 +8,5 @@ This repository is a collection of small, beginner-friendly Python projects that
 
 1. **Leap Year Checker**: confirms if year provided is a leap year.
 2. **Quiz Game**: a mini quiz.
+3. **Rock, Paper**: Scissors: simple game where user and computer select rock, paper, or scissors.
+4. **Email Slicer**: extracts and displays username and domain from a provided email address.
