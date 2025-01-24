@@ -144,3 +144,5 @@ def shorten_to_date(long_date):
 print(shorten_to_date('Monday February 2, 8pm'))
 print(shorten_to_date('Tuesday November 13, 10pm'))
 print(shorten_to_date('Saturday August 2, 6.30am'))
+
+
