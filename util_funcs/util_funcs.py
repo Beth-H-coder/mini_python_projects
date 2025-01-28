@@ -250,3 +250,12 @@ print(7 // 3 ) # 2
 
 my_list = "beth, charlotte, thomas"
 print(list(my_list))
+
+def cookie(x):
+  return f'Who ate the last cookie? It was {"Zach" if type(x) is str else "Monica" if type(x) in [int, float] else "the dog"}!'
+
+def sum_args(*args):
+    return sum(args)
+
+def find_needle(haystack):
+    return f'found the needle at position {haystack.index("needle")}'
