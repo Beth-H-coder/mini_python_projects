@@ -259,3 +259,48 @@ def sum_args(*args):
 
 def find_needle(haystack):
     return f'found the needle at position {haystack.index("needle")}'
+
+def is_palindrome(word):
+    reverse_word = word[::-1]
+    return reverse_word == word
+
+print('test palindrome', is_palindrome('chocolate'))
+print('test palindrome', is_palindrome('racecar'))
+print('test palindrome', is_palindrome('bird'))
+print('test palindrome', is_palindrome('deed'))
+
+def any_palindrome(list):
+    for word in list:
+        if word[::-1] == word:
+            return f'Yes, {word.upper()} is a palindrome'
+    return False
+
+
+print('test any word is palindrome', any_palindrome(['car', 'bird', 'dog']))
+print('test any word is palindrome', any_palindrome(['car', 'racecar', 'bird', 'dog']))
+print('test any word is palindrome', any_palindrome(['car', 'bird', 'elephant', 'tut', 'dog']))
+
+# Check all numbers in a list 
+
+def all_nums(numlist):
+    for num in numlist:
+        if not isinstance(num, int):
+            return False
+    return True
+    
+print(all_nums([78, 444, 2, None, True, 101, 3]))
+print(all_nums([78, None, 2, None, True, 101, 3]))
+print(all_nums([78, 44, 444, 2, 555, 101, 3]))
+print(all_nums([78, 'fran', 444, 2, False, 101, 3]))
+
+def flick_switch(lst):
+    new_words = []
+    status = True
+    
+    for word in lst:
+        if word == 'flick':
+            status = not status
+            new_words.append(status)
+        else: 
+            new_words.append(status)
+    return new_words
